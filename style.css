@@ -5,67 +5,74 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
-    margin: 0;
-}
-
-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-header {
+header,
+footer {
+    min-height: 15vh;
     text-align: center;
     background-color: #023C40;
     color: white;
-    padding: 30px;
 }
 
 header p {
     font-size: 75%;
 }
 
-.card {
-    border-style: dashed;
-    border-width: 2px;
-    padding: 15px;
-    float: left;
-    width: 25%;
+main {
+    background-color: #E1DEE3;
+    min-height: 70vh;
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.card header {
+section {
+    width: 30%;
+    border: 1px dashed black;
+    padding: 0 1%;
+    padding-bottom: 1%;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+}
+
+section:hover,
+section:hover h2 {
+    box-shadow: inset 0 0 8px #39A9DB, 0 0 8px #39A9DB;
+}
+
+section,
+section h2 {
+    transition: all 1s ease;
+
+}
+
+section h2 {
+    border: 2px solid black;
+    border-radius: 8px;
     position: relative;
-    margin-top: -15px;
+    bottom: 16px;
+    background: #E1DEE3;
 }
 
-.card p {
-    text-align: left;
+section pre {
+    padding: 2%;
+    border-radius: 10px;
+    background: linear-gradient(#f5c6cf, #d48896);
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
 }
 
-.card pre code {
-    background-color: #C3979F;
-    color: white;
-    border: 1px solid #999;
-    display: block;
-    margin: 5px;
-    padding: 0px;
-}
-
-footer h3 {
-    text-align: center;
-}
 
 @media screen and (max-width:992px) {
-    .card {
-        width: 50%;
+    section {
+        width: 45%;
     }
-
 }
 
-@media screen and (max-width:768px) {
-    .card {
-        width: 100%;
+@media screen and (max-width:576px) {
+    section {
+        width: 97%;
     }
-
 }
