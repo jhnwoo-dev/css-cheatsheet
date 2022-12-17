@@ -5,6 +5,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+::selection {
+    background: #BCF8EC;
+}
+
 header,
 footer {
     min-height: 15vh;
@@ -62,6 +66,7 @@ section pre {
     flex-grow: 1;
     display: flex;
     align-items: center;
+    user-select: all;
 }
 
 
