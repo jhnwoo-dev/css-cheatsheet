@@ -11,7 +11,7 @@
 
 header,
 footer {
-    min-height: 15vh;
+    min-height: 10vh;
     text-align: center;
     background-color: #023C40;
     color: white;
@@ -23,7 +23,7 @@ header p {
 
 main {
     background-color: #E1DEE3;
-    min-height: 70vh;
+    min-height: 80vh;
     padding: 1%;
     display: flex;
     flex-wrap: wrap;
@@ -57,6 +57,7 @@ section h2 {
     position: relative;
     bottom: 16px;
     background: #E1DEE3;
+    padding-left: 5px;
 }
 
 section pre {
